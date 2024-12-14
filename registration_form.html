@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .header:hover {
+            background-color: #45a049;
+        }
+        .container {
+            margin-top: 80px;
+            padding: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="home.html" class="header">Home</a>
+
+    <div class="container">
+        <h2>Football Registration Form</h2>
+        <form action="submit_form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="position">Preferred Position</label>
+                <select id="position" name="position">
+                    <option value="forward">Forward</option>
+                    <option value="midfielder">Midfielder</option>
+                    <option value="defender">Defender</option>
+                    <option value="goalkeeper">Goalkeeper</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Number</label>
+                <input type="tel" id="contact" name="contact" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <!-- New Preferred Club Field -->
+            <div class="form-group">
+                <label for="club">Preferred Club</label>
+                <select id="club" name="club">
+                    <option value="manchester_united">Manchester United</option>
+                    <option value="barcelona">FC Barcelona</option>
+                    <option value="real_madrid">Real Madrid</option>
+                    <option value="bayern_munich">Bayern Munich</option>
+                    <option value="paris_saint_germain">Paris Saint-Germain</option>
+                    <option value="juventus">Juventus</option>
+                    <option value="liverpool">Liverpool</option>
+                    <option value="chelsea">Chelsea FC</option>
+                    <!-- Add more clubs as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
