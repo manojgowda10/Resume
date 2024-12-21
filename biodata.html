@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Biodata</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+            position: relative;
+        }
+        .container {
+            width: 85%;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            color: #2c3e50;
+            font-size: 1.6rem;
+            margin-top: 20px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
+        }
+        .content {
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1rem;
+            color: #7f8c8d;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 12px;
+            font-size: 1rem;
+            color: #34495e;
+        }
+        .contact-info p,
+        .education li,
+        .experience li,
+        .skills li {
+            font-size: 1.1rem;
+            color: #2c3e50;
+        }
+        .social-links a {
+            color: #3498db;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+        .social-links a:hover {
+            color: #2c3e50;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1rem;
+            color: #7f8c8d;
+        }
+        .footer a {
+            color: #3498db;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        /* Home button style */
+        .home-button {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .home-button:hover {
+            background-color: #2980b9;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .section-title {
+                font-size: 1.4rem;
+            }
+            .home-button {
+                top: 15px;
+                right: 20px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Home Button -->
+    <a href="home.html" class="home-button">Home</a>
+
+    <div class="container">
+        <h1>Manoj R</h1>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> Manojgowda.com</p>
+            <p><strong>Phone:</strong> +9740170645</p>
+            <p><strong>Address:</strong> vodinakoppa,Shimogga</p>
+        </div>
+
+        <div class="section-title">Objective</div>
+        <div class="content">
+            <p>A passionate software developer seeking a challenging role to leverage my skills in web development and contribute to innovative projects.</p>
+        </div>
+
+        <div class="section-title">Education</div>
+        <div class="content">
+            <ul>
+                <li><strong>BS in Computer Science</strong> - JNNCE(2018 - 2022)</li>
+                <li><strong>High School</strong> - acharya HIgh School (2014 - 2018)</li>
+            </ul>
+        </div>
+
+        <div class="section-title">Experience</div>
+        <div class="content">
+            <ul>
+                <li><strong>Software Developer</strong> - google (2022 - Present)</li>
+                <li><strong>Intern</strong> - orcale Solutions (2021 - 2022)</li>
+            </ul>
+        </div>
+
+        <div class="section-title">Skills</div>
+        <div class="content">
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Node.js, Express</li>
+                <li>Python, Java</li>
+                <li>Database Management (MySQL, MongoDB)</li>
+                <li>Version Control (Git, GitHub)</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Follow me on:</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/manoj" target="_blank">LinkedIn</a>
+                <a href="https://github.com/manoj" target="_blank">GitHub</a>
+                <a href="https://twitter.com/manoj" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
